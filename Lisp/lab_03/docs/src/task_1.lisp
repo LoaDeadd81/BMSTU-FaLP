@@ -1,0 +1,1 @@
+(defun get_not_less_even (x) (cond ((evenp x) x) (T (+ x 1))))

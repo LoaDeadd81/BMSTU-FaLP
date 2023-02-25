@@ -1,0 +1,1 @@
+(defun abs_inc (x) (cond ((< x 0) (- x 1)) (T (+ x 1))))

@@ -1,0 +1,87 @@
+\chapter*{Практические задания}
+
+\section*{Задание 1}
+
+Составить диаграмму вычисления следующих выражений: \\
+(equal 3 (abs - 3)) \\
+(equal (* 2 3) (+ 7 2)) \\
+(equal (+ 1 2) 3) \\
+(equal (- 7 3) (* 3 2)) \\
+(equal (* 4 7) 21) \\
+(equal (abs (- 2 4)) 3)) \\
+\clearpage
+
+\section*{Задание 2}
+Написать функцию, вычисляющую гипотенузу прямоугольного треугольника по заданным катетам и составить диаграмму её вычисления.
+
+\begin{lstinputlisting}[
+	caption={Задание 2},
+	label={lst:t2},
+	style={lsp},
+	]{./src/task_2.lisp}
+\end{lstinputlisting}
+
+\section*{Задание 3}
+Каковы результаты вычисления следующих выражений?(объяснить возможную ошибку и варианты ее устранения)
+
+\begin{lstinputlisting}[
+	caption={Задание 3},
+	label={lst:t3},
+	style={lsp},
+	]{./src/task_3.lisp}
+\end{lstinputlisting}
+
+Возможные ошибки:\\
+The variable ... is unbound --- обращение к символу, которому не было присвоено значение.\\
+invalid number of arguments --- в функции передано некорректное количество аргументов. \\
+The value ... is not of type NUMBER --- все ожидаемого типа NUMBER какой-то другой
+
+\section*{Задание 4}
+Написать функцию longer\_then от двух списков-аргументов, которая возвращает Т, если первый аргумент имеет большую длину.
+
+\begin{lstinputlisting}[
+	caption={Задание 4},
+	label={lst:t4},
+	style={lsp},
+	]{./src/task_4.lisp}
+\end{lstinputlisting}
+
+\section*{Задание 5}
+Каковы результаты вычисления следующих выражений?
+
+\begin{lstinputlisting}[
+	caption={Задание 5},
+	label={lst:t5},
+	style={lsp},
+	]{./src/task_5.lisp}
+\end{lstinputlisting}
+
+\section*{Задание 6}
+Дана функция (defun mystery (x) (list (second x) (first x))). Какие результаты вычисления следующих выражений? 
+
+\begin{lstinputlisting}[
+	caption={Задание 6},
+	label={lst:t6},
+	style={lsp},
+	]{./src/task_6.lisp}
+\end{lstinputlisting}
+
+\section*{Задание 7}
+Написать функцию, которая переводит температуру в системе Фаренгейта температуру по Цельсию (defum f-to-c (temp)…).
+
+\begin{lstinputlisting}[
+	caption={Задание 7},
+	label={lst:t7},
+	style={lsp},
+	]{./src/task_7.lisp}
+\end{lstinputlisting}
+
+\section*{Задание 8}
+Что получится при вычисления каждого из выражений?
+
+\begin{lstinputlisting}[
+	caption={Задание 8},
+	label={lst:t8},
+	style={lsp},
+	]{./src/task_8.lisp}
+\end{lstinputlisting}

@@ -1,0 +1,1 @@
+(defun is_between (x a b) (or (and (< a x) (< x b)) (and (< b x) (< x a))))

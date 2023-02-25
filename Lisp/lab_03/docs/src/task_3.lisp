@@ -1,0 +1,1 @@
+(defun sort2(x y) (cond ((< x y) (list x y)) (T (list y x))))
