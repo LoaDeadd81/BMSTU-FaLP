@@ -1,0 +1,10 @@
+(defun remove_last1 (lst) (reverse (cdr (reverse lst))))
+(defun remove_last2 (lst) (reverse (last (reverse lst) (- (length lst) 1))))
+(defun remove_last3 (lst)
+    (if (cdr lst)
+        (cons
+            (car lst)
+            (remove_last3 (cdr lst))
+        )
+    )
+)
